@@ -1,0 +1,79 @@
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+</head>
+  <body>
+    <header class="topnav">
+        <a class="a2" href="#home"><img src="imagens/logo2.0.png" ></a>
+        <a class="a1" href="#temperatura">Clima</a>
+        <a class="a1" href="#smart-light">Luzes</a>
+        <a class="a1" href="#jbl_alexa">Som e Controle</a>
+        <a class="a1" href="#about">Sobre nós</a>
+        <a><button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+          <span></span>
+          <span></span>
+        </button></a>
+</header>
+
+<script>
+  function toggle_light_mode() {
+      var app = document.getElementsByTagName("BODY")[0];
+      if (localStorage.lightMode == "dark") {
+    localStorage.lightMode = "light";
+    app.setAttribute("light-mode", "light");
+      } else {
+    localStorage.lightMode = "dark";
+    app.setAttribute("light-mode", "dark");
+      }		
+  }
+  </script>
+  <script>
+    var app = document.getElementsByTagName("BODY")[0];
+    if (localStorage.lightMode == "dark") {
+        app.setAttribute("light-mode", "dark");
+    }
+</script>
+  <div style="padding-left:16px;">
+    <div id="home"></div>
+    <h1 id="margin">TecHouse </h1>
+    <h3> For your Smart House</h3>
+    <p> Check Out </p>
+  </div>
+  <div id="temperatura">
+  <img src="imagens/termostato_auto_x2.jpg" width="100%">
+  </div>
+  <div id="smart-light">
+    <img src="imagens/smart-light.jpg" width="100%">
+  </div>
+  <div class="text_img">
+    <h3>Amazon Alexa</h3>
+</div>
+  <div id="margin">
+    <div id="jbl_alexa">
+    <img src="imagens/jbl.png" width="40%">
+    <img src="imagens/alexa.png" width="40%">
+  </div>
+  </div>
+  
+
+  <footer id="about">
+  <div class="container">
+  <p> Avenida Maria Amélia de Resende Martins, 4i , Taquaral, Campinas, SP. CEP: 13075-530. TecHouse Serviços LTDA.</p>
+  <p>Outras formas de comprar: encontre uma TecHouse ou revendedor Tech na sua região. Ou ligue para 0000-000-0000</p>
+  <hr>
+  <p>Os Serviços de Mídia da TecHouse são fornecidos pela TecHouse Services BRASIL BTC.</p>
+  <p> Copyright © 2022 TecHouse Inc. Todos os direitos reservados. CNPJ: 00.000.000/0000-00 </p>
+<ul>
+    <li>Políticas   |</li>
+    <li>Missão   |</li>
+    <li>Visão   |</li>
+    <li>Valores  </li>
+</ul>  
+</div >
+  
+  </footer>
+<a class="button-topo" href="#home">&#9650;</a>  
+</body>
+  
+  </html>
