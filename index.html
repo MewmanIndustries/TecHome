@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="/TecHome/Imagens/icone.ico">
+    <title>TecHouse</title>
+</head>
+  <body>
+
+    <header class="topnav">
+        <a class="a2" href="#home"><img src="/TecHome/Imagens/logo2.0.png" ></a>
+        <a class="a1" href="#temperatura">Clima</a>
+        <a class="a1" href="#smart-light">Luzes</a>
+        <a class="a1" href="#jbl_alexa">Som e Controle</a>
+        <a class="a1" href="#cadastro">Cadastro</a>
+        <a class="a1" href="#about">Sobre nós</a>
+       
+        <button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+          <span></span>
+          <span></span>
+        </button>
+</header>
+  <div style="padding-left:16px;">
+    <div id="home"></div>
+    <h1 id="margin">TecHouse </h1>
+    <h3> For your Smart House</h3>
+    <p> Check Out </p>
+  </div>
+  <div id="temperatura">
+  <img src="/TecHome/Imagens/termostato_auto_x2.jpg" width="100%">
+  </div>
+  <div id="smart-light">
+    <img src="/TecHome/Imagens/smart-light.jpg" width="100%">
+  </div>
+  <div class="text_img">
+    <h3>Amazon Alexa</h3>
+</div>
+  <div id="margin">
+    <div id="jbl_alexa">
+    <img src="/TecHome/Imagens/jbl.png" width="40%">
+    <img src="/TecHome/Imagens/alexa.png" width="40%">
+  </div>
+  </div>
+<div><p>Gostou de algum produto? Faça já seu cadastro e efetua sua primeira compra!!</p></div>
+
+<div id="cadastro">
+<main class="container">
+<h1 class="title"><br>
+        <br><br>
+        Cadastro</h1>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="nome" required>
+                <label for="nome">Nome</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="email"  required>
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="cep" required>
+                <label for="cep">CEP</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="endereco"  required>
+                <label for="endereco">Endereço</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="numero"  required>
+                <label for="numero">Número</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="inputbox">
+                <input type="text" id="bairro"  required>
+                <label for="bairro">Bairro</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="cidade"  required>
+                <label for="cidade">Cidade</label>
+            </div>
+            <div class="inputbox">
+                <input type="text" id="estado"  required>
+                <label for="estado">Estado</label>
+            </div>
+        </div>
+        <div class="row">
+            <button onclick="confirmar()">Cadastrar</button>
+        </div>
+  </div>
+</div>
+</main>
+
+  <footer id="about">
+  <div class="contain">
+  <p> Avenida Maria Amélia de Resende Martins, 4i , Taquaral, Campinas, SP. CEP: 13075-530. TecHouse Serviços LTDA.</p>
+  <p>Outras formas de comprar: encontre uma TecHouse ou revendedor Tech na sua região. Ou ligue para 0000-000-0000</p>
+  <hr>
+  <p>Os Serviços de Mídia da TecHouse são fornecidos pela TecHouse Services BRASIL BTC.</p>
+  <p> Copyright © 2022 TecHouse Inc. Todos os direitos reservados. CNPJ: 00.000.000/0000-00 </p>
+<ul>
+    <li>Políticas   |</li>
+    <li>Missão   |</li>
+    <li>Visão   |</li>
+    <li>Valores  </li>
+</ul>  
+</div >
+  </footer>
+<a class="button-topo" href="#home">&#9650;</a>  
+</body>
+<script src="main.js"></script>
+  
+  </html>
